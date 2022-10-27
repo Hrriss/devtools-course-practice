@@ -66,8 +66,8 @@ TEST(Khristina_Motyl_Test, Divide) {
 
     ComplexNumber Subtraction = tmp1 / tmp2;
 
-    EXPECT_EQ(1.84, Subtraction.getRe());
-    EXPECT_EQ(0.88, Subtraction.getIm());
+    EXPECT_DOUBLE_EQ(1.84, Subtraction.getRe());
+    EXPECT_DOUBLE_EQ(-0.88, Subtraction.getIm());
 }
 
 TEST(Khristina_Motyl_Test, Sum) {
@@ -81,6 +81,6 @@ TEST(Khristina_Motyl_Test, Sum) {
 
     ComplexNumber Subtraction = tmp1 / tmp2;
 
-    EXPECT_EQ(7, Subtraction.getRe());
-    EXPECT_EQ(2.5, Subtraction.getIm());
+    EXPECT_DOUBLE_EQ(1.84, Subtraction.getRe());
+    EXPECT_DOUBLE_EQ(-0.88, Subtraction.getIm());
 }
