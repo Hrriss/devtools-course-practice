@@ -1,12 +1,12 @@
 // Copyright 2022 Khristina Motyl
-#include "include/simple_num.h"
+#include "include/prime_num.h"
 
 #include <gtest/gtest.h>
 
 #include <utility>
 #include <vector>
 
-std::vector<int> simple_numbers::_Calculate(int start, int end) {
+std::vector<int> simple_numbers::Calculate(int start, int end) {
   if (end < start || start < 1 || end < 2) {
     throw std::invalid_argument("Wrong input!");
   }
@@ -29,8 +29,8 @@ std::vector<int> simple_numbers::_Calculate(int start, int end) {
   return res;
 }
 
-void simple_numbers::_Print(int start, int end) {
-  std::vector<int> simple_nums = _Calculate(start, end);
+void simple_numbers::Print(int start, int end) {
+  std::vector<int> simple_nums = Calculate(start, end);
   std::cout << "Simple numbers start: " << start << "  end: " << end
             << std::endl;
   std::cout << "{ ";
