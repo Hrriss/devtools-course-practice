@@ -9,6 +9,10 @@ TEST(Simple_num_test, testThrow) {
   ASSERT_ANY_THROW(simple_numbers::Calculate(12, 5));
 }
 
+TEST(Simple_num_test, testPrint) {
+  ASSERT_NO_THROW(simple_numbers::Print(1, 5));
+}
+
 TEST(Simple_num_test, test1) {
   std::vector<int> expectedResult{13, 17, 19, 23, 29};
   ASSERT_EQ(simple_numbers::Calculate(12, 30), expectedResult);
